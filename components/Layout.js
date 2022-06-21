@@ -10,7 +10,7 @@ function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <Link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -20,7 +20,7 @@ function Layout({ children, home }) {
           </>
         ) : (
           <>
-          <img src="/images/zonoryo.jpg" className={`${utilStyles.borderCircle}`} width="100px" height="100px"/>
+          <img src="/images/zonoryo.jpg" className={`${utilStyles.borderCircle}`} width="100px" height="100px" />
           <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         )}

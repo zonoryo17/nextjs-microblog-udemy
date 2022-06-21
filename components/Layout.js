@@ -10,7 +10,7 @@ function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <Link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
         {home ? (

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import { getPostsData } from '../lib/post';
 import Head from 'next/head'
+import Image from 'next/image';
 
 //SSGの場合
 export async function getStaticProps() {
@@ -43,7 +44,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({id, title, date, thumbnail}) => (
             <article key={id}>
             <Link href={`/posts/${id}`}>
-              <img src={`${thumbnail}`}
+              <Image src={`${thumbnail}`}
                 className={styles.thumbnailImage}/>
             </Link>
             <Link href={`/posts/${id}`}>

@@ -1,11 +1,9 @@
 import styles from '../styles/Home.module.css'
 import Layout, { siteTitle } from '../components/layout'
-
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import { getPostsData } from '../lib/post';
 import Head from 'next/head'
-import Image from 'next/image';
 
 //SSGの場合
 export async function getStaticProps() {
